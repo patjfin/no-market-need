@@ -1,0 +1,125 @@
+---
+title: Part 1 - The Application
+date: "2017-07-12T17:12:33.962Z"
+description: "How we got into YC"
+---
+
+“They’re ready for you now”. Every molecule of water exits my mouth in a split second. My hands are lead weights. My head feels like a fizzing rocket about to take off. We walk into the room. There are even more people in there this time. An array of my idols sit across from the chairs left for us. I smile. I try to act natural. I attempt some bumbling small talk but I’m cut off.
+
+“Ok, let’s get started. I’ve got good news and bad news. Bad news is we hate your idea. Like, really hate it. But we like you guys….So do you have any more ideas?”. GULP.
+
+So how did we get here? How did three punters from Ireland, end up pitching for their lives in sunny California? I’m not exactly sure when I first heard about Y Combinator. It would be cool if there was a some weird anecdote where I met Patrick Collison and he gave me a stripe T-Shirt and said “Learn Lisp and one day you will be me”, but alas, I don't remember.
+
+I do remember looking at the YC website for the first time. It was honestly the coolest thing, a load of people dedicated to making new stuff take off. Then I read a line in the batch description about how the dinners were like the dinners at the colleges in Oxford. My stomach dropped. I had just been rejected for the second time for a Masters in Oxford. "Ah shit, another cool place I'll never get into." Tab closed.
+
+I still kept one eye on YC. It was somewhere on my *5 year plan* list. I just wasn't ready yet. I hadn't read enough books. I didn't know enough about the important things. I didn't know what the important things were yet. I didn't even have Twitter. But most of all, I didn't have an idea.
+
+I'd had random ideas for startups during college. They were fleeting, exciting weeks where I would be consumed with THE THING that was going to be MY THING and the world was going to change and I was going to change it. And then the balloon would slowly deflate. Someone else was doing something similar somewhere. And they were smarter than me. And they had money. And was it really even a good idea in the first place?
+
+The one time I did follow through, it was an unmitigated disaster. I teamed up with one of my best friends. We lost money that we borrowed from our family. We nearly failed a year of college. Maybe worst of all, we lost a lot of confidence.
+
+I've been trying to think of the moment that was the spark for everything that's happened since the 25th of April. The proverbial butterfly flapping it's wings that lead to us pitching on stage in front of a load of money in San Francisco. It's hard to pin down. It might have been a chat with 2 Irish founders from the S18 batch who were so humble they made it sound easy ( it isn't). It might have been Audible recommending The Launch Pad as a must listen ( cheers Jeff B ). In reality, it was probably that my self confidence was just recovered enough to roll the dice again and take another beating.
+
+Whatever the case, I found myself thinking about YC while drifting off to sleep on the 24th of April. Who has a problem in their life that software might fix? Who complains about something being done in a crazy way? It hit me like a bolt of lightning. My heart started racing. I jumped about 5 feet out of bed and started scribbling frantically in my notebook. TALK TO ROMY ABOUT FACTORY?????
+
+---
+
+Romy is the smartest person in the room. In every room. She's also the most competitive person in the room. In every room. She got the maximum score in her Leaving Cert ( the Irish version of the SATs / AP exams ). She came top of her class in college. She speaks 4 languages. She learnt Polish last year *because she had a Polish friend at work....*
+
+When we finished college, she could have picked any Grad program she wanted. And she chose possibly the most obscure one available - Product Engineer a massive food manufacturer in Dublin. In our slightly over-competitive friend group, it became a bit of a joke. Romy's making bread. All Romy talks about is bread. Bread, bread, bread. For Romy, the decision was an obvious choice. It was hard and different.
+
+Like everything she did, Romy wanted to be the very best Product Engineer she could be. Everything became her problem. And boy were there a lot of problems. Machines would break. Documents would be lost. Produce would be wasted. Romy was used to perfection and this certainly wasn't it. And boy did she let us know.
+
+There were a number of times we met up for lunch and spent an hour talking about all the ways that the bread production process could be improved. I'm not sure if I was a completely willing participant in all of these conversations but Romy would by so animated that it was hard to change the subject.
+
+Big problem? Romy would always gripe about the legacy software they used. Check.
+
+Felt by lots of people? Everyone eats bread. Check.
+
+We're uniquely qualified to fix it? Sure why not aye? Check.
+
+I texted Romy first thing the next morning. "You free for food this eve? I have an idea I want to talk to you about."
+
+---
+
+I actively disliked David when I first met him. He was my on-boarding buddy when I started at Intercom, and for my first 2 weeks he was my least favorite person. David has an uncanny ability to slice you down at the ankles with a well placed "hmmm....".
+
+I thought he was the most pedantic man on the planet. Getting a Pull Request ( a source code change ) reviewed by David usually meant about 6 comments and 3/4 fresh commits until he was happy with it. The dreaded comment of "Should we have tests for this?" would derail a whole afternoon. Then one day I got my first “This looks good” review with no pointers and I realized - David had made me better. He wasn’t being mean or picking on me. He just has high standards.
+
+Turns out he is also one of the funniest people I've ever met. We were a lethal combination in the office. David would make me laugh about once an hour. And my laugh is possibly the loudest laugh you'll come across. There were a number of noise complaints.
+
+About a year after I started, David rang me to say that he was moving to London to work at the Intercom office there. "Wow, that's so exciting, I'm delighted for you!", I lied. I was gutted. I hung up the phone and got a bit teary eyed. I remember thinking, "this is the last time you'll get to work with David". Lol.
+
+One month after his big move, I sent David a message at 11:30AM. It was something along the lines of "Let's apply for YC, it'll be funny". David decided not to reply all day....
+
+---
+
+Meanwhile, I get dinner with Romy. We start chatting about our usual stuff; weekend plans, Netflix shows, how all our friends were emigrating ( Irish people are big fans of emigration ). Then I casually bring up applying to YC. "We're always talking about making a change, and this looks like something very different". I ask her about the factory, was there anything she could imagine improving with software. "Oh god, there's a lot of bad software". We start chatting about the different tools they use in detail.
+
+Then we find something that sounds very interesting. "I made an excel model to try to predict when a machine might need maintenance using the maintenance log data." Ok, I know that sounds boring as beans, but it's the next bit that gets me excited. "It works really well. The manufacturing line I used it on had a about 4 or 5 hours less downtime per month than those without it."
+
+"How much does an hour of downtime cost?" "About 20k". Holy shit.
+
+Hacky solution that works? Check.
+
+Way of turning it into a product? Check.
+
+Domain expertise? Romy lives and breathes manufacturing. Check, check, check.
+
+I inhale the rest of my pizza and hurry Romy through her pasta. We're back at my house with our laptops open within 25 minutes.
+
+---
+
+We hit a snag almost immediately. The deadline for applications was the 25th of March. We're a full month late. At this stage David finally replies and agrees to participate - until he sees the missed deadline. I would bet my non existent fortune that David has never handed in an assignment less than a week early.
+
+“Oh well, it was an interesting idea.” 
+
+“Ah no look, it says they take late submissions.”
+
+“A month late?...”
+
+“Come on, we’ve nothing better to do.”
+
+First blank field: Company Name? We quickly whip out google translate and start firing in words related to manufacturing. We find monarú - Irish for manufacturing. The .io is available for $12. Sorted.
+
+If I had known that we would be referred to as the '*Monaru crew*', or that I would be standing on stage wearing a t-shirt with MONARU written on it, in front of a massive MONARU logo, or that I would say MONARU literally hundreds of times over summer, I might have appreciated the significance of that moment. Oh well.
+
+With the most important task of the evening out of the way, we move onto the actual application
+
+*Question 1: What are you building, in 50 Characters or less:*
+
+Jesus, haven’t a clue. We rewrite the same word soup about 5 times until we settle on something that seems vaguely plausible.
+
+*"Eliminating downtime through smart maintenance"*
+
+Christ.
+
+We stumble through the rest of the application over the next 3 hours. Reading back over it 6 months later, it's really very entertaining stuff. My personal highlights include: 
+
+Q: *How do or will you make money? How much could you make?*
+
+A: This will be sold using a SaaS model. Finger in the air, its lots of money.
+
+*Q: How far along are you?*
+
+A: We are in the early stages of understanding the problem and customer needs.
+
+*Q: How long have each of you been working on this?*
+
+A: We have been working as a team on this project for under a week.
+
+Towards the end, David loses interest and hits the hay. It's past midnight and Romy and I are exhausted. We take about 5 attempts to record our application video. Romy displays her uncanny ability to look like she's reading off a script, even when she isn't. I have no idea where to look when she's talking so I settle on a hypnotic, serial killer-esque, smile into the camera. I also refer to about 3 different things as *"our main aim",* a stunning display of my prioritization skills*.* It's really not great but we're too tired to care. I copy the link in and we hit send.
+
+[https://www.youtube.com/watch?v=sTDauTIdNsk&feature=emb_title](https://www.youtube.com/watch?v=sTDauTIdNsk&feature=emb_title)
+
+And then we forget we applied. I don't mean to say this to sound cool or aloof. For the first week or two, I was checking my email twice a day on the distant hope that someone was going to ask us to interview. But after a fortnight, with the start of the summer batch quickly approaching, we resigned ourselves to the fact that our application was probably too late.
+
+Romy and I started brainstorming other ideas for a change of scenery. We decided that we were going to spend 6 months traveling in South America. I began to research Ayawaska retreats and started learning Spanish. YC slowly drifted back onto my *5 Year Plan,* where I thought it would remain until I was ready. I was wrong.
+
+---
+
+On the 20th of May, around midnight, I was trying to finish my DuoLingo goal for the day. But *Tengo que dormir.* Just before I put my phone away, I get an email from *applications@ycombinator.com.* I was resigned to our fate. It was the belated rejection. Except it wasn't. I nearly throw my phone at the wall. HOLY SHIT. HOLY SHIT. HOLY SHIT.
+
+I try to call David. No answer. I try Romy. No answer. Why is everyone asleep!! I send David a voice note and pace around my room for about an hour before getting into bed. I stare at the ceiling for what seems like an eternity. I finally drift off in the wee hours, and dream about Silicon Valley.
+
+We had 10 days until our interview. The clock was already counting down. And we had one small problem. We had absolutely nothing to show them....
