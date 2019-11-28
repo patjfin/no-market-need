@@ -2,67 +2,74 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Splash from "../components/splash"
+import Navbar from "../components/navbar"
+import logo from "../../content/assets/NMN.png"
+
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, description, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <Splash title={title} description={description} />
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div style={{
+          display: "flex",
+          padding: "30px"
+        }}>
+          <div
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
+              width: "100px"
+            }}>
+              <img 
+              src={logo}
+              style={{
+                width: "100%",
+                display: "block",
+                height: "auto",
+              }}
+            />
+          </div>
+        </div>
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
+      <div>
+        <div 
+          style={{ backgroundColor: "black", color: "white"}}>
+          <header
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: rhythm(40),
+            }}>
+            {header}
+          </header>
+        </div>
+        <div>
+          {/* <Navbar /> */}
+        </div>
+        <main
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            padding: "30px",
+            maxWidth: rhythm(40),
+          }}>
+          {children}
+        </main>
+        <footer           
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(40),
+          }}>
           © {new Date().getFullYear()}
         </footer>
       </div>
