@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `No Market Need`,
-    description: `A few founders trying to figure things out`,
+    title: `No Market Need.`,
+    description: `A few founders trying to avoid the number 1 reason why startups fail`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,9 +13,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
+      resolve:`gatsby-plugin-mdx`,
+      options: { 
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -49,5 +51,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`400`, `600`, `900i`]
+          }
+        ],
+      },
+    }
   ],
 }
