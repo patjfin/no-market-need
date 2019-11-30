@@ -67,6 +67,7 @@ const Splash = ({title, description}) => {
             marginBottom: rhythm(3.5),
             marginTop: 0,
             display: "flex",
+            color: "#E3D0FF",
           }}>
           {description}
         </h2>
