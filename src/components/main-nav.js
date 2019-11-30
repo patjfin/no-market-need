@@ -26,7 +26,7 @@ class MainNav extends React.Component {
       <div>
         <Navbar color="light" light expand="md">
         <NavbarBrand></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler className="custom-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
             <div class='main-nav-item'>

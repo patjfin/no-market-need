@@ -64,7 +64,7 @@ const Splash = ({title, description}) => {
             fontSize: 18,
             fontWeight: 400,
             fontStyle: "italic",
-            marginBottom: rhythm(1.5),
+            marginBottom: rhythm(3.5),
             marginTop: 0,
             display: "flex",
           }}>
