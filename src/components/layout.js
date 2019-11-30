@@ -20,7 +20,7 @@ class Layout extends React.Component {
     } else {
       header = (
         <div
-        class="splash"
+        class="splash-secondary"
         style={{
           display: "flex",
           padding: "30px"
