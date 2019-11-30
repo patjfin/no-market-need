@@ -10,6 +10,10 @@
 
 @import "stars";
 
+body {
+  background: #F9FAFB;
+}
+
 
 a {
   color: #9C6ADE;
@@ -41,7 +45,7 @@ hr {
 
   a {
     &:hover {
-      color: white;
+      color: #F9FAFB;
     }
   }
 }
@@ -50,7 +54,7 @@ hr {
   min-width: 100px;
   padding: 10px;
   text-align: center;
-  background-color: white;
+  background-color: #F9FAFB;
   border-radius: 3px;
 
   &:hover {
@@ -62,6 +66,6 @@ hr {
   padding: 3px;
   border-radius: 3px;
   &:hover {
-    background-color: white;
+    background-color: #F9FAFB;
   }
 }
