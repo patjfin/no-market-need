@@ -1,8 +1,67 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+
+@import "stars";
+
 
 a {
-  color: #ec88cd;
+  color: #9C6ADE;
+  text-decoration: none;
+  box-shadow: none;
 
   &:hover {
-    color: blue;
+    color: #E3D0FF;
+  }
+}
+
+hr {
+  background-color: #E3D0FF;
+}
+
+
+.main-nav {
+  background-color: #F6F0FD;
+}
+
+.mr-auto.navbar-nav {
+  margin: auto;
+}
+
+.main-nav-item {
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  a {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.nav-item {
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #9C6ADE;
+  }
+}
+
+.icon-link {
+  padding: 3px;
+  border-radius: 3px;
+  &:hover {
+    background-color: white;
   }
 }

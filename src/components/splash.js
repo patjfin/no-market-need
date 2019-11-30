@@ -3,33 +3,39 @@ import React from "react"
 
 import { rhythm } from "../utils/typography"
 import logo from "../../content/assets/NMN.png"
+import { Link } from "gatsby"
+
 
 const Splash = ({title, description}) => {
   return (
-    <div style={{
+    <div
+    style={{
       minHeight: "50vh",
       display: "flex",
       flexDirection: "column",
       textAlign: "center",
-      backgroundColor: "black",
     }}>
       <div style={{
         display: "flex",
         padding: "30px"
       }}>
-        <div
-          style={{
-            width: "100px"
-          }}>
-            <img 
-            src={logo}
+        <Link to="/">
+          <div
+            class="icon-link"
             style={{
-              width: "100%",
-              display: "block",
-              height: "auto",
-            }}
-          />
-        </div>
+              width: "100px",
+              height: "44px"
+            }}>
+              <img 
+                src={logo}
+                style={{
+                  width: "100%",
+                  display: "block",
+                  height: "auto",
+                }}
+              />
+          </div>
+        </Link>
       </div>
       <div
         style={{
@@ -46,7 +52,7 @@ const Splash = ({title, description}) => {
             fontStyle: "italic",
             fontFamily: "Lato",
             marginBottom: rhythm(1.5),
-            marginTop: 0,
+            marginTop: "100px",
             display: "flex",
             letterSpacing: "-0.02em",
           }}

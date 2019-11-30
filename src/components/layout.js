@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 import Splash from "../components/splash"
-import Navbar from "../components/navbar"
+import MainNav from "../components/main-nav"
 import logo from "../../content/assets/NMN.png"
 
 
@@ -19,30 +19,42 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <div style={{
+        <div
+        class="splash"
+        style={{
           display: "flex",
           padding: "30px"
         }}>
+        <Link to="/">
           <div
+            class="icon-link"
             style={{
-              width: "100px"
+              width: "100px",
+              height: "44px"
             }}>
               <img 
-              src={logo}
-              style={{
-                width: "100%",
-                display: "block",
-                height: "auto",
-              }}
-            />
-          </div>
+                src={logo}
+                style={{
+                  width: "100%",
+                  display: "block",
+                  height: "auto",
+                }}
+              />
+            </div>
+          </Link>
         </div>
       )
     }
     return (
       <div>
-        <div 
-          style={{ backgroundColor: "black", color: "white"}}>
+        <div
+        class="splash"
+          style={{color: "#F6F0FD", padding: "20px"}}>
+        <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </section>
           <header
             style={{
               marginLeft: `auto`,
@@ -52,8 +64,15 @@ class Layout extends React.Component {
             {header}
           </header>
         </div>
-        <div>
-          {/* <Navbar /> */}
+        <div class="main-nav">
+          <div style={{
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                maxWidth: rhythm(40),
+              }}>
+            <MainNav />
+        </div>
+
         </div>
         <main
           style={{
@@ -68,6 +87,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
+            padding: "30px",
             maxWidth: rhythm(40),
           }}>
           © {new Date().getFullYear()}
