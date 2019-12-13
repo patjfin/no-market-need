@@ -59,7 +59,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(
-      filter: { frontmatter: { section: { eq: "Our YC story" } } }
+      filter: { frontmatter: { section: { eq: "PM" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import profileImage from "../../content/assets/patrick-profile.png"
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,14 +14,19 @@ class BlogIndex extends React.Component {
     const posts = data.allMdx.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle} description={description}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        description={description}
+      >
         <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
+            <article class="article-container" key={node.fields.slug}>
               <header>
                 <h3
+                  class="mt_12"
                   style={{
                     marginBottom: rhythm(1 / 4),
                   }}
@@ -29,15 +35,11 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
+                <div class="author mt_12">
+                  <img class="profile-icon" src={profileImage} />
+                  <span class="ml_8 light-text">Patrick</span>
+                </div>
               </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
             </article>
           )
         })}
@@ -56,7 +58,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
           excerpt
@@ -67,6 +69,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author
           }
         }
       }

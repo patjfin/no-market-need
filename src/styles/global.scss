@@ -7,7 +7,7 @@
 @import "../../node_modules/bootstrap/scss/dropdown";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
-
+@import "utilities";
 @import "stars";
 
 .custom-toggler .navbar-toggler-icon {
@@ -15,31 +15,25 @@
 }
 
 body {
-  background: #F9FAFB;
+  background: #f9fafb;
 }
 
 .splash-secondary {
   height: 20vh;
 }
 
-
 a {
-  color: #9C6ADE;
+  color: #9c6ade;
   text-decoration: none;
   box-shadow: none;
 
   &:hover {
-    color: #E3D0FF;
+    color: #e3d0ff;
   }
 }
 
 hr {
-  background-color: #E3D0FF;
-}
-
-
-.main-nav {
-  margin-top: -100px;
+  background-color: #e3d0ff;
 }
 
 .mr-auto.navbar-nav {
@@ -53,7 +47,7 @@ hr {
 
   a {
     &:hover {
-      color: #F9FAFB;
+      color: #f9fafb;
     }
   }
 }
@@ -62,12 +56,12 @@ hr {
   min-width: 100px;
   padding: 5px 10px 5px 10px;
   text-align: center;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   border-radius: 3px;
   border: 1px solid;
 
   &:hover {
-    background-color: #9C6ADE;
+    background-color: #9c6ade;
   }
 }
 
@@ -75,6 +69,29 @@ hr {
   padding: 3px;
   border-radius: 3px;
   &:hover {
-    background-color: #F9FAFB;
+    background-color: #f9fafb;
   }
+}
+
+.article-container {
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border: 2px solid rgb(227, 208, 255);
+  border-radius: 3px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 50px;
+  margin: 4px;
+  border-radius: 50%;
+}
+
+.light-text {
+  color: #230051;
 }
