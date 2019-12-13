@@ -6,7 +6,6 @@ import Splash from "../components/splash"
 import MainNav from "../components/main-nav"
 import logo from "../../content/assets/NMN.png"
 
-
 class Layout extends React.Component {
   render() {
     const { location, title, description, children } = this.props
@@ -14,25 +13,25 @@ class Layout extends React.Component {
     let header
 
     if (location.pathname === rootPath) {
-      header = (
-        <Splash title={title} description={description} />
-      )
+      header = <Splash title={title} description={description} />
     } else {
       header = (
         <div
-        class="splash-secondary"
-        style={{
-          display: "flex",
-          padding: "30px"
-        }}>
-        <Link to="/">
-          <div
-            class="icon-link"
-            style={{
-              width: "100px",
-              height: "44px"
-            }}>
-              <img 
+          class="splash-secondary"
+          style={{
+            display: "flex",
+            padding: "30px",
+          }}
+        >
+          <Link to="/">
+            <div
+              class="icon-link"
+              style={{
+                width: "100px",
+                height: "44px",
+              }}
+            >
+              <img
                 src={logo}
                 style={{
                   width: "100%",
@@ -47,31 +46,30 @@ class Layout extends React.Component {
     }
     return (
       <div>
-        <div
-        class="splash"
-          style={{color: "#F6F0FD", padding: "20px"}}>
-        <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-      </section>
+        <div class="splash" style={{ color: "#F6F0FD", padding: "20px" }}>
+          <section className="wrapper">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+          </section>
           <header
             style={{
               marginLeft: `auto`,
               marginRight: `auto`,
               maxWidth: rhythm(40),
-            }}>
+            }}
+          >
             {header}
           </header>
+          <MainNav />
         </div>
         <div class="main-nav">
-          <div style={{
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                maxWidth: rhythm(40),
-              }}>
-            <MainNav />
-        </div>
-
+          <div
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: rhythm(40),
+            }}
+          ></div>
         </div>
         <main
           style={{
@@ -79,16 +77,18 @@ class Layout extends React.Component {
             marginRight: `auto`,
             padding: "30px",
             maxWidth: rhythm(40),
-          }}>
+          }}
+        >
           {children}
         </main>
-        <footer           
+        <footer
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
             padding: "30px",
             maxWidth: rhythm(40),
-          }}>
+          }}
+        >
           © {new Date().getFullYear()}
         </footer>
       </div>

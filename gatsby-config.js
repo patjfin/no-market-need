@@ -13,8 +13,8 @@ module.exports = {
       },
     },
     {
-      resolve:`gatsby-plugin-mdx`,
-      options: { 
+      resolve: `gatsby-plugin-mdx`,
+      options: {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
           {
@@ -52,15 +52,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "./content/assets/NMN-dark.png",
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
             family: `Lato`,
-            variants: [`400`, `600`, `900i`]
-          }
+            variants: [`400`, `600`, `900i`],
+          },
         ],
       },
-    }
+    },
   ],
 }

@@ -13,12 +13,12 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle} >
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article style={{maxWidth: rhythm(26), margin: "auto"}}>
+        <article style={{ maxWidth: rhythm(26), margin: "auto" }}>
           <header>
             <h1
               style={{
@@ -44,8 +44,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-          </footer>
+          <footer></footer>
         </article>
 
         <nav>
@@ -96,6 +95,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author
       }
     }
   }

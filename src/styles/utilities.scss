@@ -1,0 +1,393 @@
+/* FLEXING */
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.with_columns {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.flex.with_rows {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.flex.fill {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.flex.flex-end {
+  justify-content: flex-end;
+}
+
+.flex.flex-between {
+  justify-content: space-between;
+}
+
+.flex.flex-around {
+  justify-content: space-around;
+}
+
+.flex.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex.flex-right {
+  margin-left: auto;
+}
+
+.flex.flex-center {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-vertically-center {
+  align-items: center;
+}
+
+.flex.scrolls {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.flex.flex-third {
+  flex-basis: 33.3%;
+}
+
+.flex.flex-two-thirds {
+  flex-basis: 66.6%;
+}
+
+.flex.flex-fourth {
+  flex-basis: 25%;
+}
+
+.flex.flex-fifth {
+  flex-basis: 20%;
+}
+
+.flex.flex-tenth {
+  flex-basis: 10%;
+}
+
+.flex.flex-three-fourths {
+  flex-basis: 75%;
+}
+
+/* SPACING */
+
+.m_1 {
+  margin: 1px;
+}
+
+.m_4 {
+  margin: 4px;
+}
+
+.m_12 {
+  margin: 12px;
+}
+
+.m_20 {
+  margin: 20px;
+}
+
+.m_40 {
+  margin: 40px;
+}
+
+.mt_1 {
+  margin-top: 1px;
+}
+
+.mt_4 {
+  margin-top: 4px;
+}
+
+.mt_8 {
+  margin-top: 8px;
+}
+
+.mt_12 {
+  margin-top: 12px;
+}
+
+.mt_16 {
+  margin-top: 16px;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mt_32 {
+  margin-top: 32px;
+}
+
+.mt_40 {
+  margin-top: 40px;
+}
+
+.mt_56 {
+  margin-top: 56px;
+}
+
+.mt_64 {
+  margin-top: 64px;
+}
+
+.mb_4 {
+  margin-bottom: 4px;
+}
+
+.mb_8 {
+  margin-bottom: 8px;
+}
+
+.mb_12 {
+  margin-bottom: 12px;
+}
+
+.mb_16 {
+  margin-bottom: 16px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_24 {
+  margin-bottom: 24px;
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mr_4 {
+  margin-right: 4px;
+}
+
+.mr_8 {
+  margin-right: 8px;
+}
+
+.mr_12 {
+  margin-right: 12px;
+}
+
+.mr_20 {
+  margin-right: 20px;
+}
+
+.mr_40 {
+  margin-right: 40px;
+}
+
+.mr_56 {
+  margin-right: 56px;
+}
+
+.ml_4 {
+  margin-left: 4px;
+}
+
+.ml_8 {
+  margin-left: 8px;
+}
+
+.ml_12 {
+  margin-left: 12px;
+}
+
+.ml_20 {
+  margin-left: 20px;
+}
+
+.ml_24 {
+  margin-left: 24px;
+}
+
+.ml_28 {
+  margin-left: 28px;
+}
+
+.ml_40 {
+  margin-left: 40px;
+}
+
+.p_0 {
+  padding: 0px;
+}
+
+.p_1 {
+  padding: 1px;
+}
+
+.p_4 {
+  padding: 4px;
+}
+
+.p_10 {
+  padding: 10px;
+}
+
+.p_8 {
+  padding: 8px;
+}
+
+.p_12 {
+  padding: 12px;
+}
+
+.p_20 {
+  padding: 20px;
+}
+
+.p_40 {
+  padding: 40px;
+}
+
+.pt_4 {
+  padding-top: 4px;
+}
+
+.pt_20 {
+  padding-top: 20px;
+}
+
+.pl_4 {
+  padding-left: 4px;
+}
+
+.pl_8 {
+  padding-left: 8px;
+}
+
+.pl_20 {
+  padding-left: 20px;
+}
+
+.pl_40 {
+  padding-left: 40px;
+}
+
+.pr_4 {
+  padding-right: 4px;
+}
+
+.pr_8 {
+  padding-right: 8px;
+}
+
+.pr_12 {
+  padding-right: 12px;
+}
+
+.pr_20 {
+  padding-right: 20px;
+}
+
+.pr_40 {
+  padding-right: 40px;
+}
+
+.pb_20 {
+  padding-bottom: 20px;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-light {
+  color: #9da4ab;
+}
+
+.inline-link {
+  color: #007ace;
+  cursor: pointer;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: #637381;
+}
+
+.background-hover {
+  border-radius: 4px;
+  transition: background 100ms cubic-bezier(0.64, 0, 0.35, 1);
+  &:hover {
+    background-color: #212b361a;
+  }
+}
+
+.fit-height-content {
+  height: fit-content;
+}
+
+.soft-border {
+  border: 0.2rem solid #c6cdd3;
+  border-radius: 3px;
+}
