@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import Splash from "../components/splash"
+import SplashMinified from "../components/splash-minified"
 import MainNav from "../components/main-nav"
 import logo from "../../content/assets/NMN.png"
 
@@ -13,35 +14,12 @@ class Layout extends React.Component {
     let header
 
     if (location.pathname === rootPath) {
-      header = <Splash title={title} description={description} />
+      header = (
+        <Splash description={description} />
+      )
     } else {
       header = (
-        <div
-          class="splash-secondary"
-          style={{
-            display: "flex",
-            padding: "30px",
-          }}
-        >
-          <Link to="/">
-            <div
-              class="icon-link"
-              style={{
-                width: "100px",
-                height: "44px",
-              }}
-            >
-              <img
-                src={logo}
-                style={{
-                  width: "100%",
-                  display: "block",
-                  height: "auto",
-                }}
-              />
-            </div>
-          </Link>
-        </div>
+        <SplashMinified description={description} />
       )
     }
     return (
@@ -60,7 +38,6 @@ class Layout extends React.Component {
           >
             {header}
           </header>
-          <MainNav />
         </div>
         <div class="main-nav">
           <div

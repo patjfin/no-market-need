@@ -2,75 +2,66 @@
 import React from "react"
 
 import { rhythm } from "../utils/typography"
-import logo from "../../content/assets/NMN.png"
+import hero from "../../content/assets/hero.png"
 import { Link } from "gatsby"
 
 
-const Splash = ({title, description}) => {
+const Splash = ({ description }) => {
   return (
     <div
     style={{
-      minHeight: "50vh",
       display: "flex",
+      minHeight: "50vh",
+      alignItems: "center",
       flexDirection: "column",
-      textAlign: "center",
+      justifyContent: "center",
     }}>
-      <div style={{
-        display: "flex",
-        padding: "30px"
-      }}>
-        <Link to="/">
-          <div
-            class="icon-link"
-            style={{
-              width: "100px",
-              height: "44px"
-            }}>
-              <img 
-                src={logo}
-                style={{
-                  width: "100%",
-                  display: "block",
-                  height: "auto",
-                }}
-              />
-          </div>
-        </Link>
-      </div>
+      <img 
+        src={hero}
+        style={{
+          width: "100%",
+          maxWidth: "500px",
+          display: "block",
+          height: "auto",
+          marginBottom: "50px",
+          marginTop: "50px",
+        }}
+      />
+
       <div
         style={{
+          position: "relative",
+          minHeight: "100px",
+          width: "100%",
           display: "flex",
-          "flex-direction" : "column",
-          alignItems: "center",
           justifyContent: "center",
+          fontFamily: "Pixel",
+          textAlign: "center",
         }}
       >
-        <h1
+        <p
           style={{
-            fontSize: 60,
-            fontWeight: "bold",
-            fontStyle: "italic",
-            fontFamily: "Lato",
-            marginBottom: rhythm(1.5),
-            marginTop: "100px",
-            display: "flex",
-            letterSpacing: "-0.02em",
+            position: "absolute",
+            marginLeft: "1px",
+            fontFamily: "Pixel",
+            color: "#FFCADD",
           }}
-        >
-          {title}
-        </h1>
-        <h2
+        >{description}</p>
+        <p
           style={{
-            fontSize: 18,
-            fontWeight: 400,
-            fontStyle: "italic",
-            marginBottom: rhythm(3.5),
-            marginTop: 0,
-            display: "flex",
-            color: "#E3D0FF",
-          }}>
-          {description}
-        </h2>
+            position: "absolute",
+            marginLeft: "-1px",
+            fontFamily: "Pixel",
+            color: "#ACECF4",
+          }}
+        >{description}</p>
+        <p
+          style={{
+            position: "absolute",
+            fontFamily: "Pixel",
+            color: "white",
+          }}
+        >{description}</p>
       </div>
     </div>
   )
