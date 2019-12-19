@@ -10,6 +10,12 @@
 @import "utilities";
 @import "stars";
 
+
+@font-face {
+  font-family: "Pixel";
+  src: url("../../static/fonts/smallpixel.woff2")   format("woff2");
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -68,8 +74,9 @@ hr {
 .icon-link {
   padding: 3px;
   border-radius: 3px;
+  transition: all 0.1s;
   &:hover {
-    background-color: #f9fafb;
+    transform: scale(1.05);
   }
 }
 

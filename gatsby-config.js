@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `No Market Need.`,
-    description: `A few founders trying to avoid the number 1 reason why startups fail`,
+    description: `Three founders trying to avoid the number one reason startups fail`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -68,5 +68,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ["Pixel"],
+          urls: ["/fonts/fonts.css"],
+        },
+      }
+    }
   ],
 }
