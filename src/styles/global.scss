@@ -29,12 +29,12 @@ body {
 }
 
 a {
-  color: #9c6ade;
-  text-decoration: none;
+  color: blue;
   box-shadow: none;
+  transition: all;
 
   &:hover {
-    color: #e3d0ff;
+    color: #1a1027;
   }
 }
 
@@ -81,11 +81,33 @@ hr {
 }
 
 .article-container {
-  padding: 20px;
+  padding: 20px 80px;
   margin: 10px;
   background: white;
-  border: 2px solid rgb(227, 208, 255);
   border-radius: 3px;
+  max-width: 800px;
+}
+
+.article-container:hover h3 {
+  transition: all 0s;
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 600px) {
+  .article-container {
+    padding: 20px 40px;
+  }
+
+  .splash {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .article-container {
+    padding: 20px 20px;
+  }
 }
 
 .author {
@@ -94,11 +116,23 @@ hr {
 }
 
 .profile-icon {
-  width: 50px;
+  width: 40px;
   margin: 4px;
   border-radius: 50%;
 }
 
 .light-text {
-  color: #230051;
+  color: #1a1027;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.tiny-text {
+  font-size: 12px;
+}
+
+.grey-text {
+  color: #9fa1a9;
 }
