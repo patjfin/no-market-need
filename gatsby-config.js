@@ -52,6 +52,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://nomarketneed.us4.list-manage.com/subscribe/post?u=a88b838124faa152c53633d33&amp;id=d4531ec4c0",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: "./content/assets/NMN-dark.png",
