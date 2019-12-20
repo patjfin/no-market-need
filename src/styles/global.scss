@@ -136,3 +136,51 @@ hr {
 .grey-text {
   color: #9fa1a9;
 }
+
+.subscribe-input {
+  -webkit-appearance: none;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  padding: 4px 8px;
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+  font-family: Helvetica, sans-serif, sans-serif;
+  height: 38px;
+  box-shadow: 1px 1px 5px 0px #dedede;
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+.subscribe-input::placeholder {
+  color: #5f5f5f;
+  font-size: 14px;
+}
+
+.subscribe-input:-webkit-autofill {
+  -webkit-text-background-color: yellow !important;
+}
+
+.subscribe-submit {
+  margin-left: 8px;
+  border: none;
+  background: #f3f3f3;
+  border-radius: 3px;
+  padding: 0px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  transition-timing-function: ease-in;
+  height: 38px;
+}
+
+.subscribe-submit:focus {
+  outline: none;
+}
+
+.subscribe-submit:hover {
+  background: #dadada;
+  color: #272727;
+}
