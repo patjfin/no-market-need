@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-154851102-1`,
       },
     },
     `gatsby-plugin-offline`,
@@ -69,13 +69,13 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
           families: ["Pixel"],
           urls: ["/fonts/fonts.css"],
         },
-      }
-    }
+      },
+    },
   ],
 }
