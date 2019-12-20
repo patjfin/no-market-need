@@ -35,7 +35,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              7 minute read
             </p>
           </header>
           <MDXRenderer>{post.body}</MDXRenderer>
