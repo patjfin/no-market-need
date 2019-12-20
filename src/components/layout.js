@@ -1,19 +1,18 @@
 import React from "react"
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 import { rhythm } from "../utils/typography"
 import Splash from "../components/splash"
 import SplashMinified from "../components/splash-minified"
 
 class Layout extends React.Component {
-
   state = {
     email: "",
     submitted: false,
-    text: 'Subscribe for more stories',
+    text: "Subscribe for more stories",
     buttonText: "Submit",
   }
-    
+
   handleInputChange = event => {
     const value = event.target.value
     this.setState({
@@ -21,13 +20,13 @@ class Layout extends React.Component {
     })
   }
 
-  _handleSubmit = async (e) => {
-    e.preventDefault();
-    this.setState({ buttonText: "Submitting..." });
-    await addToMailchimp(this.state.email);
+  _handleSubmit = async e => {
+    e.preventDefault()
+    this.setState({ buttonText: "Submitting..." })
+    await addToMailchimp(this.state.email)
     this.setState({
-      email: '',
-      text: 'Thanks for subscribing!',
+      email: "",
+      text: "Thanks for subscribing!",
       buttonText: "Submit",
     })
   }
@@ -38,13 +37,9 @@ class Layout extends React.Component {
     let header
 
     if (location.pathname === rootPath) {
-      header = (
-        <Splash description={description} />
-      )
+      header = <Splash description={description} />
     } else {
-      header = (
-        <SplashMinified description={description} />
-      )
+      header = <SplashMinified description={description} />
     }
 
     return (
@@ -101,13 +96,13 @@ class Layout extends React.Component {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
+              padding: "10px",
             }}
           >
             {this.state.text}
             <form
               autoComplete="off"
               style={{
-                width: "380px",
                 display: "flex",
                 justifyContent: "center",
                 marginTop: "12px",
@@ -122,7 +117,9 @@ class Layout extends React.Component {
                 onChange={this.handleInputChange}
                 class="subscribe-input flex fill"
               />
-              <button type="submit" class="subscribe-submit">{this.state.buttonText}</button>
+              <button type="submit" class="subscribe-submit">
+                {this.state.buttonText}
+              </button>
             </form>
           </div>
 
