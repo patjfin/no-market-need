@@ -31,29 +31,34 @@ class BlogIndex extends React.Component {
             return (
               <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 <article class="article-container" key={node.fields.slug}>
-                    <h3
+                  <h3
+                    style={{
+                      marginTop: "8px",
+                      marginBottom: "18px",
+                      textAlign: "center",
+                      fontSize: "28px",
+                    }}
+                  >
+                    {title}
+                  </h3>
+                  <div class="author mt_12">
+                    <img class="profile-icon" src={profileImage} />
+                    <div
                       style={{
-                        marginTop: "8px",
-                        marginBottom: "18px",
-                        textAlign: "center",
-                        fontSize: "28px",
+                        display: "flex",
+                        flexDirection: "column",
+                        marginLeft: "8px",
                       }}
                     >
-                      {title}
-                    </h3>
-                    <div class="author mt_12">
-                      <img class="profile-icon" src={profileImage} />
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          marginLeft: "8px",
-                        }}
+                      <span class="small-text light-text">Patrick</span>
+                      <span
+                        style={{ marginTop: "-3px" }}
+                        class="tiny-text grey-text"
                       >
-                        <span class="small-text light-text">Patrick</span>
-                        <span style={{marginTop: "-3px"}} class="tiny-text grey-text">Nov 11th 2019 · 5 minute read</span>
-                      </div>
+                        7 minute read
+                      </span>
                     </div>
+                  </div>
                 </article>
               </Link>
             )
