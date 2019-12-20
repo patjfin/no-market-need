@@ -1,10 +1,6 @@
 
 import React from "react"
-
-import { rhythm } from "../utils/typography"
 import hero from "../../content/assets/hero.png"
-import { Link } from "gatsby"
-
 
 const Splash = ({ description }) => {
   return (

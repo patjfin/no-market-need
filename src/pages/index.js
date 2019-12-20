@@ -20,29 +20,45 @@ class BlogIndex extends React.Component {
         description={description}
       >
         <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article class="article-container" key={node.fields.slug}>
-              <header>
-                <h3
-                  class="mt_12"
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <div class="author mt_12">
-                  <img class="profile-icon" src={profileImage} />
-                  <span class="ml_8 light-text">Patrick</span>
-                </div>
-              </header>
-            </article>
-          )
-        })}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <article class="article-container" key={node.fields.slug}>
+                    <h3
+                      style={{
+                        marginTop: "8px",
+                        marginBottom: "18px",
+                        textAlign: "center",
+                        fontSize: "28px",
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <div class="author mt_12">
+                      <img class="profile-icon" src={profileImage} />
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          marginLeft: "8px",
+                        }}
+                      >
+                        <span class="small-text light-text">Patrick</span>
+                        <span style={{marginTop: "-3px"}} class="tiny-text grey-text">Nov 11th 2019 · 5 minute read</span>
+                      </div>
+                    </div>
+                </article>
+              </Link>
+            )
+          })}
+        </div>
       </Layout>
     )
   }

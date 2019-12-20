@@ -1,11 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import Splash from "../components/splash"
 import SplashMinified from "../components/splash-minified"
-import MainNav from "../components/main-nav"
-import logo from "../../content/assets/NMN.png"
 
 class Layout extends React.Component {
   render() {
@@ -59,11 +56,15 @@ class Layout extends React.Component {
           {children}
         </main>
         <footer
+          class="grey-text"
           style={{
+            fontSize: "12px",
             marginLeft: `auto`,
             marginRight: `auto`,
             padding: "30px",
             maxWidth: rhythm(40),
+            display: "flex",
+            justifyContent: "center",
           }}
         >
           © {new Date().getFullYear()}
