@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: `https://nmn-assets.s3.amazonaws.com/Screen+Shot+2020-01-08+at+7.18.31+PM.png`,
+        },
       ].concat(meta)}
     />
   )
