@@ -20,15 +20,15 @@ class BlogIndex extends React.Component {
         description={description}
       >
         <SEO title="All posts" />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 <article class="article-container" key={node.fields.slug}>
                   <h3
@@ -61,9 +61,9 @@ class BlogIndex extends React.Component {
                   </div>
                 </article>
               </Link>
-            )
-          })}
-        </div>
+            </div>
+          )
+        })}
       </Layout>
     )
   }
