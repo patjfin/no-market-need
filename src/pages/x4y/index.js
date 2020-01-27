@@ -59,11 +59,13 @@ class X4Y extends React.Component {
               justifyContent: "center",
               alignItems: "center",
               fontSize: "120px",
+              marginTop: "40px",
+              marginBottom: "40px",
             }}
           >
             <div>
               <img
-                src={company.logo}
+                src={'/logos/' + company.logo}
                 style={{
                   display: "flex",
                   flexDirection: "row",
