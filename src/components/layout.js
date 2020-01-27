@@ -9,7 +9,7 @@ class Layout extends React.Component {
   state = {
     email: "",
     submitted: false,
-    text: "Subscribe for more stories",
+    text: "Subscribe to keep up",
     buttonText: "Submit",
   }
 
