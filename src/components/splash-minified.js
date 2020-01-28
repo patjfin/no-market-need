@@ -11,6 +11,7 @@ const Splash = ({ description }) => {
       class="splash"
       style={{
         display: "flex",
+        justifyContent: "center",
         padding: "30px"
       }}>
       <Link to="/">
