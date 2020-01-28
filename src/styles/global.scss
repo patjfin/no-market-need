@@ -184,3 +184,18 @@ hr {
   background: #dadada;
   color: #272727;
 }
+
+.timer {
+  text-align: center;
+}
+
+.timer .value {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.timer .text {
+  color: #7b7b7b;
+  font-weight: 300;
+  font-size: 14px;
+}
