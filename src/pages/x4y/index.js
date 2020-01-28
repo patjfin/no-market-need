@@ -110,7 +110,7 @@ class X4Y extends React.Component {
             
               <CountdownCircleTimer
                 isPlaying
-                durationSeconds={30}
+                durationSeconds={60}
                 colors={[["#00cc88", 0.5], ["#F7B801", 0.3], ["#A30000"]]}
                 renderTime={this.renderTime}
                 onComplete={() => [false, 1000]}
