@@ -7,6 +7,38 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 class X4Y extends React.Component {
 
+  constructor(props) {
+    super(props);
+    const company = companies[Math.floor(Math.random()*companies.length)];
+    const object = objects[Math.floor(Math.random()*objects.length)];
+    this.state = {
+      company: company,
+      object: object,
+      key: new Date,
+    }
+  }
+
+  _handleEscKey(event){
+    event.stopPropagation();
+    if(event.keyCode == 13){
+      const company = companies[Math.floor(Math.random()*companies.length)];
+      const object = objects[Math.floor(Math.random()*objects.length)];
+      this.setState({
+        company: company,
+        object: object,
+        key: new Date,
+      });
+    }
+  }
+
+  componentWillMount(){
+    document.addEventListener("keydown", this._handleEscKey.bind(this), false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this._handleEscKey.bind(this), false);
+  }
+
   renderTime = (value) => {
     if (value === 0) {
       return <div className="timer">Time's up!</div>;
@@ -25,9 +57,6 @@ class X4Y extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const description = data.site.siteMetadata.description
-    
-    const company = companies[Math.floor(Math.random()*companies.length)];
-    const object = objects[Math.floor(Math.random()*objects.length)];
 
     return (
       <Layout
@@ -60,19 +89,30 @@ class X4Y extends React.Component {
                 textAlign: "center",
                 fontSize: "18px",
                 color: "#828282",
-                marginBottom: "40px",
+                marginBottom: "12px",
               }}
             >
               You have 30 seconds to pitch the company below...
             </div>
-
-            <CountdownCircleTimer
-              isPlaying
-              durationSeconds={30}
-              colors={[["#00cc88", 0.5], ["#F7B801", 0.3], ["#A30000"]]}
-              renderTime={this.renderTime}
-              onComplete={() => [false, 1000]}
-            />
+            <div
+              style={{
+                textAlign: "center",
+                fontSize: "14px",
+                color: "#828282",
+                marginBottom: "40px",
+              }}
+            >
+              Press ENTER to shuffle
+            </div>
+            
+              <CountdownCircleTimer
+                isPlaying
+                durationSeconds={30}
+                colors={[["#00cc88", 0.5], ["#F7B801", 0.3], ["#A30000"]]}
+                renderTime={this.renderTime}
+                onComplete={() => [false, 1000]}
+                key={this.state.key}
+              />
           </div>
 
 
@@ -89,7 +129,7 @@ class X4Y extends React.Component {
           >
             <div>
               <img
-                src={'/logos/' + company.logo}
+                src={'/logos/' + this.state.company.logo}
                 style={{
                   display: "flex",
                   flexDirection: "row",
@@ -112,7 +152,7 @@ class X4Y extends React.Component {
             </div>
             
             <div>
-              {object.icon}
+              {this.state.object.icon}
             </div>
           </div>
 
@@ -122,7 +162,7 @@ class X4Y extends React.Component {
               color: "#393eff",
             }}
           >
-            "{company.name} for {object.name}"
+            "{this.state.company.name} for {this.state.object.name}"
           </div>
 
         </div>
