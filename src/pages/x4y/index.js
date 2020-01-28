@@ -34,20 +34,11 @@ class X4Y extends React.Component {
             <div
               style={{
                 textAlign: "center",
-                fontSize: "80px",
-                textDecoration: "underline",
-              }}
-            >
-              X for Y
-            </div>
-            <div
-              style={{
-                textAlign: "center",
-                fontSize: "20px",
+                fontSize: "18px",
                 color: "#828282"
               }}
             >
-              You have 1 minute to pitch the company below...
+              You have 30 seconds to pitch the company below...
             </div>
           </div>
 
@@ -59,8 +50,8 @@ class X4Y extends React.Component {
               justifyContent: "center",
               alignItems: "center",
               fontSize: "120px",
-              marginTop: "40px",
-              marginBottom: "40px",
+              marginTop: "20px",
+              marginBottom: "20px",
             }}
           >
             <div>
