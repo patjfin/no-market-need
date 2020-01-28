@@ -18,9 +18,8 @@ class X4Y extends React.Component {
     }
   }
 
-  _handleEscKey(event){
-    event.stopPropagation();
-    if(event.keyCode == 13){
+  resetGame(event) {
+    if (event.keyCode == 13) {
       const company = companies[Math.floor(Math.random()*companies.length)];
       const object = objects[Math.floor(Math.random()*objects.length)];
       this.setState({
@@ -31,12 +30,12 @@ class X4Y extends React.Component {
     }
   }
 
-  componentWillMount(){
-    document.addEventListener("keydown", this._handleEscKey.bind(this), false);
+  componentWillMount() {
+    document.addEventListener("keydown", this.resetGame.bind(this), false);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keydown", this._handleEscKey.bind(this), false);
+    document.removeEventListener("keydown", this.resetGame.bind(this), false);
   }
 
   renderTime = (value) => {
