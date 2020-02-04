@@ -27,9 +27,11 @@ class BlogIndex extends React.Component {
               style={{
                 display: "flex",
                 justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
-              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 <article class="article-container" key={node.fields.slug}>
                   <h3
                     style={{

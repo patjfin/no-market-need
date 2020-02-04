@@ -73,6 +73,7 @@ class Layout extends React.Component {
             marginLeft: `auto`,
             marginRight: `auto`,
             padding: "30px",
+            width: "100%",
             maxWidth: rhythm(40),
           }}
         >
