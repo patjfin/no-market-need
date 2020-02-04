@@ -80,6 +80,11 @@ hr {
   }
 }
 
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .article-container {
   padding: 20px 80px;
   margin: 10px;
