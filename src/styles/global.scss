@@ -210,3 +210,88 @@ hr {
   font-weight: 300;
   font-size: 14px;
 }
+
+
+.x4y-sidebar {
+  max-width: 250px;
+  margin-left: 20px;
+}
+
+.keys-container {
+  min-width: 200px;
+  max-width: 200px;
+  margin-bottom: 40px;
+  padding: 5px 15px;
+  background: #f1f1f1;
+  border: 1px #ccc solid;
+  border-radius: 3px;
+}
+
+.keys-container .key {
+  margin-right: 5px;
+  padding: 3px 6px;
+	color: #fff;
+	background: #333;
+	font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; font-weight: bold;
+	border-radius: 2px;
+	text-shadow: #000 0 1px 0;
+}
+
+.keys-container .explainer {
+  color: #777;
+  font-size: 12px;
+}
+
+.x4y-explaination {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.x4y-logo {
+  width: 120px;
+  height: 120px;
+}
+
+.x4y-for {
+  font-size: 22px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: #777;
+}
+
+.x4y-emoji {
+  font-size: 120px;
+}
+
+@media only screen and (max-width: 800px) {
+  .x4y-sidebar {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .keys-container {
+    margin-top: 40px;
+  }
+
+  .x4y-explaination {
+    text-align: center;
+  }
+
+  .x4y-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .x4y-for {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .x4y-emoji {
+    font-size: 100px;
+  }
+}
