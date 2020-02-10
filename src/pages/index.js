@@ -87,8 +87,11 @@ class BlogIndex extends React.Component {
           >
             <u>Resources</u>
 
+            <Link to="survey">
+              Startup tools survery
+            </Link>
             <Link to="x4y">
-              X4Y startup idea generator
+              "X4Y" startup idea generator
             </Link>
           </div>
 

@@ -295,3 +295,139 @@ hr {
     font-size: 100px;
   }
 }
+
+.survey-item {
+  transition: all 0.1s ease-in-out;
+}
+
+.survey-item:hover {
+  transform: scale(1.08);
+}
+
+.survey-category {
+  cursor: pointer;
+}
+
+.survey-category.image {
+  border-radius: 50%;
+  background: white;
+  margin: 0px 20px;
+}
+
+.survey-category.title {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-family: monospace;
+}
+
+.survey-category.large {
+  width: 180px;
+  height: 180px;
+}
+
+.survey-category.small {
+  width: 140px;
+  height: 140px;
+}
+
+.survey-container {
+  display: flex;
+  justify-content: center;
+}
+
+.survey-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.survey-explanation {
+  color: #777;
+  font-size: 13px;
+}
+
+.survey-sidebar {
+  max-width: 240px;
+  margin-left: 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.survey-close {
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  transition: background .1s cubic-bezier(.64,0,.35,1);
+}
+
+.survey-close:hover {
+  background-color: #212b361a;
+}
+
+.breadcrumbs-subtle {
+  font-size: 13px;
+  color: #808c96;
+  padding: 2px 6px;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1100px) {
+  .survey-category.large {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .survey-category.small {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .survey-sidebar {
+    max-width: 100%;
+  }
+  .survey-category.image {
+    display: none;
+  }
+  .survey-category.title {
+    text-align: left;
+  }
+  .survey-categories {
+    flex-direction: column;
+  }
+  .survey-explanation {
+    text-align: left;
+  }
+  .survey-container {
+    flex-direction: column-reverse;
+  }
+  .survey-sidebar {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .survey-crm {
+    margin-top: 60px;
+  }
+  .survey-comms {
+    margin-top: 20px;
+  }
+  .survey-dev {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .survey-doc {
+    margin-top: 80px;
+  }
+  .survey-mgmt {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+}
