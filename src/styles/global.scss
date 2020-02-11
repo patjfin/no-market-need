@@ -296,14 +296,6 @@ hr {
   }
 }
 
-.survey-item {
-  transition: all 0.1s ease-in-out;
-}
-
-.survey-item:hover {
-  transform: scale(1.08);
-}
-
 .survey-category {
   cursor: pointer;
 }
@@ -429,5 +421,11 @@ hr {
   .survey-mgmt {
     margin-top: 10px;
     margin-left: 40px;
+  }
+  .survey-item {
+    transition: all 0.1s ease-in-out;
+  }
+  .survey-item:hover {
+    transform: scale(1.08);
   }
 }
