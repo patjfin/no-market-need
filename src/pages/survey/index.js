@@ -173,7 +173,7 @@ class X4Y extends React.Component {
             </div>
 
             <div className="survey-explanation">
-              We asked 150+ startups what tools they use. Click a category to see the most popular.
+              We asked 200+ startups what tools they use. Click a category to see the most popular.
             </div>
           
           </div>
