@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
                 marginTop: "8px",
               }}
             >
-              7 minute read
+              {post.frontmatter.time} minute read
             </p>
           </header>
           <MDXRenderer>{post.body}</MDXRenderer>
@@ -97,6 +97,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         author
+        time
       }
     }
   }

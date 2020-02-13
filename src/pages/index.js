@@ -66,7 +66,7 @@ class BlogIndex extends React.Component {
                             style={{ marginTop: "-3px" }}
                             class="tiny-text grey-text"
                           >
-                            7 minute read
+                            {node.frontmatter.time} minute read
                           </span>
                         </div>
                       </div>
@@ -87,16 +87,10 @@ class BlogIndex extends React.Component {
           >
             <u>Resources</u>
 
-            <Link to="survey">
-              Startup tools survery
-            </Link>
-            <Link to="x4y">
-              "X4Y" startup idea generator
-            </Link>
+            <Link to="survey">Startup tools survery</Link>
+            <Link to="x4y">"X4Y" startup idea generator</Link>
           </div>
-
         </div>
-          
       </Layout>
     )
   }
@@ -124,6 +118,7 @@ export const pageQuery = graphql`
             title
             description
             author
+            time
           }
         }
       }
