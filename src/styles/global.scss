@@ -10,10 +10,9 @@
 @import "utilities";
 @import "stars";
 
-
 @font-face {
   font-family: "Pixel";
-  src: url("../../static/fonts/smallpixel.woff2")   format("woff2");
+  src: url("../../static/fonts/smallpixel.woff2") format("woff2");
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -211,7 +210,6 @@ hr {
   font-size: 14px;
 }
 
-
 .x4y-sidebar {
   max-width: 250px;
   margin-left: 20px;
@@ -230,11 +228,13 @@ hr {
 .keys-container .key {
   margin-right: 5px;
   padding: 3px 6px;
-	color: #fff;
-	background: #333;
-	font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; font-weight: bold;
-	border-radius: 2px;
-	text-shadow: #000 0 1px 0;
+  color: #fff;
+  background: #333;
+  font: 12px Monaco, "Courier New", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", monospace;
+  font-weight: bold;
+  border-radius: 2px;
+  text-shadow: #000 0 1px 0;
 }
 
 .keys-container .explainer {
@@ -264,16 +264,40 @@ hr {
   font-size: 120px;
 }
 
+.reset-button {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 800px) {
+  .reset-button {
+    visibility: visible;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    background-color: #393eff;
+    color: white;
+    box-shadow: 0 3px #393eff;
+
+    &:active {
+      background-color: white;
+      color: #393eff;
+      transform: translateY(2px);
+    }
+  }
+
   .x4y-sidebar {
     max-width: 100%;
     align-items: center;
     display: flex;
+    margin-left: 0px;
     flex-direction: column-reverse;
   }
 
   .keys-container {
-    margin-top: 40px;
+    visibility: hidden;
   }
 
   .x4y-explaination {
@@ -353,7 +377,7 @@ hr {
   font-size: 13px;
   border-radius: 4px;
   font-family: sans-serif;
-  transition: background .1s cubic-bezier(.64,0,.35,1);
+  transition: background 0.1s cubic-bezier(0.64, 0, 0.35, 1);
 }
 
 .survey-close:hover {
@@ -372,7 +396,7 @@ hr {
     width: 140px;
     height: 140px;
   }
-  
+
   .survey-category.small {
     width: 100px;
     height: 100px;
