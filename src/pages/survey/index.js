@@ -54,7 +54,7 @@ class X4Y extends React.Component {
       <div>
         <div className="flex" style={{ marginBottom: "30px" }}>
           <div className="survey-close" onClick={this.resetChart.bind(this)}>Categories</div>
-          <svg viewBox="0 0 20 20" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16" fill="#808c96" fill-rule="evenodd"/></svg>
+          <svg viewBox="0 0 20 20" width="15" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16" fill="#808c96" fill-rule="evenodd"/></svg>
           <div className="breadcrumbs-subtle">CRM</div>
         </div>
         <HorizontalBar data={this.state.chartData} options={chartOptions} />
