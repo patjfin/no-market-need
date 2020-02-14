@@ -4,6 +4,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { companies, objects } from "../../../lib/startup-generator"
 import { CountdownCircleTimer } from "react-countdown-circle-timer"
+import { Link } from "gatsby"
 
 class X4Y extends React.Component {
   constructor(props) {
@@ -179,6 +180,18 @@ class X4Y extends React.Component {
               key={this.state.key}
             />
           </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "80px",
+          }}
+        >
+          <Link style={{ marginRight: "5px" }} to="/">
+            Click Here
+          </Link>{" "}
+          for more great content yo.
         </div>
       </Layout>
     )
