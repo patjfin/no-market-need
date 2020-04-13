@@ -134,7 +134,8 @@ class Layout extends React.Component {
               justifyContent: "center",
             }}
           >
-            © {new Date().getFullYear()}
+            Brought to you with ❤️ by the founders of&nbsp;
+            <a href="https://www.quorum.chat"> Quorum</a>
           </span>
         </footer>
       </div>
