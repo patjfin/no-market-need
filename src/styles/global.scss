@@ -215,6 +215,24 @@ hr {
   margin-left: 20px;
 }
 
+.designer-bar {
+  a:link {
+    color: #f94dff;
+  }
+
+  a:hover {
+    color: hotpink;
+  }
+
+  a:visited {
+    color: #f94dff;
+  }
+
+  a:visited:hover {
+    color: hotpink;
+  }
+}
+
 .keys-container {
   min-width: 200px;
   max-width: 200px;

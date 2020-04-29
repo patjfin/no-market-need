@@ -44,6 +44,38 @@ class Layout extends React.Component {
 
     return (
       <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#553c9a",
+            color: "white",
+          }}
+        >
+          <div style={{ padding: 10, maxWidth: "50%" }}>We need your help!</div>
+          <div
+            style={{
+              padding: 10,
+              maxWidth: "80%",
+              textAlign: "center",
+            }}
+          >
+            We're looking for a contract Designer 🎨
+          </div>
+          <div
+            style={{
+              padding: 10,
+              maxWidth: "80%",
+              textAlign: "center",
+            }}
+            class="designer-bar"
+          >
+            If you know someone great, or you're someone great yourself,{" "}
+            <a href="https://www.twitter.com/patjfin">DM me on Twitter:)</a>
+          </div>
+        </div>
         <div class="splash" style={{ color: "#F6F0FD", padding: "20px" }}>
           <section className="wrapper">
             <div id="stars"></div>
