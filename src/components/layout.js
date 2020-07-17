@@ -54,7 +54,6 @@ class Layout extends React.Component {
             color: "white",
           }}
         >
-          <div style={{ padding: 10, maxWidth: "50%" }}>We need your help!</div>
           <div
             style={{
               padding: 10,
@@ -62,7 +61,7 @@ class Layout extends React.Component {
               textAlign: "center",
             }}
           >
-            We're looking for a contract Designer 🎨
+            <a href="https://jobs.quorum.chat/">We're hiring!</a>
           </div>
           <div
             style={{
@@ -72,8 +71,8 @@ class Layout extends React.Component {
             }}
             class="designer-bar"
           >
-            If you know someone great, or you're someone great yourself,{" "}
-            <a href="https://www.twitter.com/patjfin">DM me on Twitter:)</a>
+            If you know someone great, or you're someone great yourself, send a
+            mail to jobs@quorum.chat
           </div>
         </div>
         <div class="splash" style={{ color: "#F6F0FD", padding: "20px" }}>
