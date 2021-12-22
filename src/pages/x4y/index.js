@@ -151,6 +151,19 @@ class X4Y extends React.Component {
               <a href="https://andrewchen.co/x-for-y-startup-ideas/">agrees</a>.
               So why not come up with your own?
             </div>
+            <span
+              class="grey-text"
+              style={{
+                fontSize: "12px",
+                maxWidth: rhythm(40),
+                marginTop: 10,
+                marginBottom: 20,
+                display: "flex",
+              }}
+            >
+              Created by
+              <a href="https://twitter.com/DavidNewell95">&nbsp;David Newell</a>
+            </span>
             <div class="keys-container">
               <div>
                 <b>Key controls</b>
@@ -176,31 +189,7 @@ class X4Y extends React.Component {
               onComplete={() => [false, 1000]}
               key={this.state.key}
             />
-            <span
-              class="grey-text"
-              style={{
-                fontSize: "12px",
-                maxWidth: rhythm(40),
-                marginTop: 40,
-                display: "flex",
-              }}
-            >
-              Created by
-              <a href="https://twitter.com/DavidNewell95">&nbsp;David Newell</a>
-            </span>{" "}
           </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "80px",
-          }}
-        >
-          <Link style={{ marginRight: "5px" }} to="/">
-            Click Here
-          </Link>{" "}
-          for more great content yo.
         </div>
       </Layout>
     )
