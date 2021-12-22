@@ -5,6 +5,7 @@ import SEO from "../../components/seo"
 import { companies, objects } from "../../../lib/startup-generator"
 import { CountdownCircleTimer } from "react-countdown-circle-timer"
 import { Link } from "gatsby"
+import { rhythm } from "../../utils/typography"
 
 class X4Y extends React.Component {
   constructor(props) {
@@ -145,13 +146,11 @@ class X4Y extends React.Component {
             >
               X for Y
             </div>
-
             <div class="x4y-explaination">
               "X for Y" startup ideas are great, even Andy Chen{" "}
               <a href="https://andrewchen.co/x-for-y-startup-ideas/">agrees</a>.
               So why not come up with your own?
             </div>
-
             <div class="keys-container">
               <div>
                 <b>Key controls</b>
@@ -166,11 +165,9 @@ class X4Y extends React.Component {
                 <div class="explainer">to shuffle company</div>
               </div>
             </div>
-
             <div class="reset-button" onClick={this.resetGame.bind(this)}>
               Shuffle
             </div>
-
             <CountdownCircleTimer
               isPlaying
               durationSeconds={60}
@@ -179,6 +176,18 @@ class X4Y extends React.Component {
               onComplete={() => [false, 1000]}
               key={this.state.key}
             />
+            <span
+              class="grey-text"
+              style={{
+                fontSize: "12px",
+                maxWidth: rhythm(40),
+                marginTop: 40,
+                display: "flex",
+              }}
+            >
+              Created by
+              <a href="https://twitter.com/DavidNewell95">&nbsp;David Newell</a>
+            </span>{" "}
           </div>
         </div>
         <div

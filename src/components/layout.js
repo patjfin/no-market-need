@@ -24,9 +24,9 @@ class Layout extends React.Component {
     this.setState({ buttonText: "Submitting..." })
 
     await fetch("https://hooks.zapier.com/hooks/catch/6111089/o7aq218/", {
-      method: 'POST',
-      body: JSON.stringify({email: this.state.email})
-    });
+      method: "POST",
+      body: JSON.stringify({ email: this.state.email }),
+    })
 
     this.setState({
       email: "",
@@ -94,40 +94,6 @@ class Layout extends React.Component {
             flexDirection: "column",
           }}
         >
-          <div
-            style={{
-              maxWidth: rhythm(40),
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              padding: "10px",
-            }}
-          >
-            {this.state.text}
-            <form
-              autoComplete="off"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginTop: "12px",
-              }}
-              onSubmit={this._handleSubmit}
-            >
-              <input
-                type="text"
-                name="email"
-                placeholder="Enter your email..."
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                class="subscribe-input flex fill"
-              />
-              <button type="submit" class="subscribe-submit">
-                {this.state.buttonText}
-              </button>
-            </form>
-          </div>
-
           <span
             class="grey-text"
             style={{
@@ -138,8 +104,8 @@ class Layout extends React.Component {
               justifyContent: "center",
             }}
           >
-            Brought to you with ❤️ by the founders of&nbsp;
-            <a href="https://www.mo.na">Mona</a>
+            Collected ramblings from
+            <a href="https://twitter.com/patjfin">&nbsp; Patrick Finlay</a>
           </span>
         </footer>
       </div>
