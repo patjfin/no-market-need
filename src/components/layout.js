@@ -1,5 +1,4 @@
 import React from "react"
-import addToMailchimp from "gatsby-plugin-mailchimp"
 
 import { rhythm } from "../utils/typography"
 import Splash from "../components/splash"
@@ -23,7 +22,12 @@ class Layout extends React.Component {
   _handleSubmit = async e => {
     e.preventDefault()
     this.setState({ buttonText: "Submitting..." })
-    await addToMailchimp(this.state.email)
+
+    await fetch("https://hooks.zapier.com/hooks/catch/6111089/o7aq218/", {
+      method: 'POST',
+      body: JSON.stringify({email: this.state.email})
+    });
+
     this.setState({
       email: "",
       text: "Thanks for subscribing!",
@@ -32,7 +36,7 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { location, title, description, children } = this.props
+    const { location, description, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -44,37 +48,6 @@ class Layout extends React.Component {
 
     return (
       <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#553c9a",
-            color: "white",
-          }}
-        >
-          <div
-            style={{
-              padding: 10,
-              maxWidth: "80%",
-              textAlign: "center",
-            }}
-          >
-            <a href="https://jobs.quorum.chat/">We're hiring!</a>
-          </div>
-          <div
-            style={{
-              padding: 10,
-              maxWidth: "80%",
-              textAlign: "center",
-            }}
-            class="designer-bar"
-          >
-            If you know someone great, or you're someone great yourself, send a
-            mail to jobs@quorum.chat
-          </div>
-        </div>
         <div class="splash" style={{ color: "#F6F0FD", padding: "20px" }}>
           <section className="wrapper">
             <div id="stars"></div>
@@ -166,7 +139,7 @@ class Layout extends React.Component {
             }}
           >
             Brought to you with ❤️ by the founders of&nbsp;
-            <a href="https://www.quorum.chat"> Quorum</a>
+            <a href="https://www.mo.na">Mona</a>
           </span>
         </footer>
       </div>

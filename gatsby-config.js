@@ -52,28 +52,20 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint:
-          "https://nomarketneed.us4.list-manage.com/subscribe/post?u=a88b838124faa152c53633d33&amp;id=d4531ec4c0",
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: "./content/assets/NMN-dark.png",
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Lato`,
-            variants: [`400`, `600`, `900i`],
-          },
+          `Lato`,
+          `400,600,900i`
         ],
-      },
+        display: 'swap'
+      }
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
